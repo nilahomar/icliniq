@@ -1,0 +1,79 @@
+.conditions-wrapper .slick-slider {
+  display: flex;
+  align-items: center;
+  background-color: #f1f4f8;
+  height: 700px;
+}
+
+.conditions-wrapper .slick-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.service-slide {
+  display: flex !important;
+  flex-direction: column;
+  color: white;
+  border-radius: 30px;
+  overflow: auto;
+  height: auto;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.conditions-wrapper .slick-dots {
+  bottom: 60px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1341a3;
+}
+
+.slick-dots li button:before {
+  font-size: 1.2rem;
+  color: #1341a3;
+}
+
+.conditions-wrapper .slick-prev {
+  display: flex !important;
+  align-items: center;
+}
+
+.conditions-wrapper .slick-prev:before {
+  width: 30px;
+  height: 350px;
+  border-radius: 0px;
+  background-color: white !important;
+  background-image: url("../../assets/left-chevron-black.png");
+}
+
+.conditions-wrapper .slick-next {
+  display: flex !important;
+  align-items: center;
+}
+
+.conditions-wrapper .slick-next:before {
+  width: 30px;
+  height: 350px;
+  border-radius: 0px;
+  background-color: white !important;
+  background-image: url("../../assets/right-chevron-black.png");
+}
+
+.service-content h3 {
+  font-size: 1.5rem;
+}
+
+.service-content h7 {
+  font-size: 1rem;
+}
+
+.service-content p {
+  font-size: 0.8rem;
+}

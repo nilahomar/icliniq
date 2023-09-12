@@ -1,0 +1,23 @@
+.specialties-container {
+  padding-top: 2rem;
+}
+.specialty-content {
+  padding: 1.8rem;
+  color: #1341a3;
+
+}
+
+.specialty-header {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.light-blue-letter{
+  color: #45C3F2;
+}
+
+.specialty-paragraph{
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}

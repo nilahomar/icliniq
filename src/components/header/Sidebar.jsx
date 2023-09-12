@@ -1,5 +1,6 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import WhiteLogo from "../../assets/ic-white-logo-1.svg";
 import "./sidebar.css";
 
 function Sidebar(props) {
@@ -7,10 +8,15 @@ function Sidebar(props) {
     <div>
       <Menu {...props}>
         <div className="sidebar-nav-logo">
-          <div>logo</div>
+        <div className="white-logo">
+          <a href="http://">
+            <img src={WhiteLogo} alt="logo" />
+          </a>
+        </div>
           <div className="login-signUp">
-            <div>Login</div>
-            <div>Signup</div>
+            <div className="login-btn">Login</div>
+            <span>/</span>
+            <div className="login-btn">Signup</div>
           </div>
         </div>
         <div className="menu-items">
