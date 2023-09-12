@@ -1,0 +1,42 @@
+.symptom-check {
+  position: fixed;
+  top: 0;
+  padding: 3px;
+  width: 100%;
+  background: #1341a3;
+  color: #fff;
+  font-weight: 700;
+  /* z-index: 999; */
+  min-height: 31px;
+  text-align: center;
+}
+
+.symptom-check-arrow {
+  margin-left: 0.5rem;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  min-height: 31px;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  top: 30px;
+  height: 65px;
+  padding: 2rem;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.hamburger{
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+
+.logo img{
+  width: 90px;
+}
