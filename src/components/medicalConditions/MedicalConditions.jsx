@@ -10,10 +10,11 @@ function MedicalConditions() {
           Most searched medical conditions
         </h4>
         <div className="contents">
+          {/* Loop through the list of medical conditions from conditions.js */}
           {conditions.map((conditions) => {
             return (
               <a
-                href="http://"
+                href="/#"
                 key={conditions.id}
                 className="medical-conditions-content"
               >

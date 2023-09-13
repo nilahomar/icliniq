@@ -13,6 +13,7 @@ import img7 from "../../assets/dentist.svg";
 import img8 from "../../assets/allergy-specialist.svg";
 import img9 from "../../assets/cosmetologist.svg";
 
+// List of specialties
 const images = [
   {
     id: "1",
@@ -73,8 +74,10 @@ const images = [
   },
 ];
 
+// using react-slick library to create Carousel
 export default class Carousel extends Component {
   render() {
+    // override default settings from the library
     const settings = {
       dots: false,
       arrows: true,
@@ -83,18 +86,21 @@ export default class Carousel extends Component {
       slidesToShow: 6,
       slidesToScroll: 1,
       className: "slides",
+      centerMode: true,
+      //Adjust settings in different screen sizes
       responsive: [
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
-          }
-        }
-      ]
+          },
+        },
+      ],
     };
 
     return (
       <Slider {...settings}>
+        {/* loop through the list of specialties */}
         {images.map((image) => {
           return (
             <div className="wrapper" key={image.id}>

@@ -1,32 +1,44 @@
 .banner-container {
   background-color: #e4e8f1;
+  background-image: url("../../assets/Banner-min-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   color: #10327a;
-  /* padding: 150px 0 0 0; */
+  display: flex;
+  flex-direction: column;
+  height: 135vh;
+}
+
+.content-left {
+  padding: 1rem;
 }
 
 .cta-buttons {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.btn-width {
+.cta-buttons-primary {
   width: 100%;
 }
 
 .banner-text-size {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 .sub-text-size {
   font-size: 3rem;
   font-weight: 300;
+  padding-bottom: 1rem;
 }
 
 .banner-text {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  color: black;
 }
 
 .banner-arrow {
@@ -67,6 +79,11 @@
 
 .user-rating-text {
   margin-top: 0.5rem;
+  text-align: center;
+}
+
+.border-right{
+  border-right: none;
 }
 
 .user-rating-span {
@@ -77,13 +94,52 @@
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .banner-container {
     padding-left: 2rem;
     padding-right: 2rem;
+    flex-direction: column;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .content-left {
+    margin-left: 4rem;
   }
   .banner-text-size {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
     line-height: 1;
   }
+
+  .banner-text {
+    font-size: 1.2rem;
+    width: 50%;
+
+  }
+
+  .cta-buttons-primary {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+  }
+
+
+.cta-buttons {
+  text-align: left;
+}
+
+  .user-rating {
+    flex-direction: row;
+    text-align: left;
+
+  }
+
+  .border-right{
+    border-right: 2px solid #8C8C8C;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
 }
