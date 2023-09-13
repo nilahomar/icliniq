@@ -2,9 +2,15 @@
   padding-top: 2rem;
 }
 .specialty-content {
-  padding: 1.8rem;
+  padding: 1rem;
   color: #1341a3;
 
+}
+
+.specialty-content h4{
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .specialty-header {
@@ -20,4 +26,27 @@
   margin-bottom: 1rem;
   padding: 1.5rem;
   font-weight: 100;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .specialties-container {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .specialty-paragraph{
+    width: 60%;
+  }
+
+  .specialty-header {
+    font-size: 2.5rem;
+  }
+
+  .specialty-content h4{
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
 }
