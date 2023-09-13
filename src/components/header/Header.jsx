@@ -73,7 +73,7 @@ function Nav() {
         <a href="/#">
           <div
             className="symptom-check"
-            style={{ background: menuOpenState ? "none" : "#1341a3" }}
+            style={{ background: menuOpenState ? "none" : "#1341a3", zIndex: menuOpenState ? "100" : "999"}}
           >
             Possible causes of symptoms in 3 mins
             <AiOutlineArrowRight className="symptom-check-arrow" />

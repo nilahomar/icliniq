@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import Header from "./components/header/Header";
 import Banner from "./components/banner/Banner";
 import Specialties from "./components/specialties/Specialties";
